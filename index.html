@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MATTS GERMAN CAR FIXING - Tomball TX</title>
+<style>
+  body {
+    background-color: #cccccc;
+    font-family: Comic Sans MS, cursive;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* MARQUEE is important */
+  marquee {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px;
+    border: 3px solid red;
+  }
+
+  /* top nav */
+  #topnav {
+    background-color: #000080;
+    padding: 10px;
+    text-align: center;
+  }
+  #topnav a {
+    color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: underline;
+  }
+  #topnav a:hover {
+    color: lime;
+  }
+
+  /* header */
+  #header {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid yellow;
+  }
+  #header h1 {
+    font-size: 42px;
+    margin: 0;
+    text-shadow: 3px 3px red;
+    letter-spacing: 2px;
+  }
+  #header p {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0 0 0;
+  }
+
+  /* hero */
+  #hero {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border: 4px dashed yellow;
+    margin: 10px;
+  }
+  #hero h2 {
+    font-size: 36px;
+    color: yellow;
+    text-shadow: 2px 2px black;
+  }
+  #hero p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    color: #ddd;
+  }
+  .bigbutton {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 14px 28px;
+    text-decoration: none;
+    border: 3px solid yellow;
+    margin: 5px;
+    font-family: Comic Sans MS, cursive;
+    cursor: pointer;
+  }
+  .bigbutton:hover {
+    background-color: yellow;
+    color: black;
+  }
+
+  /* counter section */
+  #counter {
+    background-color: #003300;
+    color: lime;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 3px solid lime;
+    border-bottom: 3px solid lime;
+  }
+
+  /* section styles */
+  .section {
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid #000080;
+  }
+  .section h2 {
+    color: #000080;
+    font-size: 26px;
+    border-bottom: 2px solid red;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .section p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  /* about section */
+  #about {
+    background-color: #ffffcc;
+  }
+  #about img {
+    float: right;
+    margin-left: 15px;
+    border: 4px solid #000080;
+    width: 160px;
+  }
+
+  /* services */
+  #services {
+    background-color: #e6f0ff;
+  }
+  .service-item {
+    background-color: #000080;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .service-item span {
+    color: yellow;
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+  /* reviews */
+  #reviews {
+    background-color: #fff0f0;
+  }
+  .review-box {
+    background-color: white;
+    border: 2px solid #000080;
+    padding: 12px;
+    margin: 10px 0;
+  }
+  .review-box .stars {
+    color: gold;
+    font-size: 20px;
+  }
+  .review-box p {
+    font-style: italic;
+    color: #444;
+    margin: 5px 0;
+  }
+  .review-box .name {
+    font-weight: bold;
+    color: #000080;
+    font-size: 13px;
+  }
+
+  /* why us */
+  #whyus {
+    background-color: #f0fff0;
+  }
+  #whyus ul {
+    font-size: 15px;
+    line-height: 2;
+    color: #333;
+    padding-left: 20px;
+  }
+  #whyus ul li::marker {
+    color: red;
+  }
+
+  /* contact */
+  #contact {
+    background-color: #000080;
+    color: white;
+    padding: 25px;
+    margin: 15px;
+    border: 4px solid yellow;
+    text-align: center;
+  }
+  #contact h2 {
+    font-size: 28px;
+    color: yellow;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  #contact p {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+  #contact a {
+    color: lime;
+  }
+
+  /* form */
+  #formarea {
+    background-color: #eeeeee;
+    margin: 15px;
+    padding: 20px;
+    border: 3px solid #000080;
+  }
+  #formarea h2 {
+    color: #000080;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  #formarea input, #formarea textarea, #formarea select {
+    display: block;
+    width: 95%;
+    margin: 8px 0;
+    padding: 8px;
+    font-family: Comic Sans MS, cursive;
+    font-size: 14px;
+    border: 2px solid #000080;
+  }
+  #formarea label {
+    font-weight: bold;
+    color: #000080;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+  }
+  #formarea input[type=submit] {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid black;
+    width: auto;
+    padding: 10px 30px;
+    font-family: Comic Sans MS, cursive;
+  }
+  #formarea input[type=submit]:hover {
+    background-color: darkred;
+  }
+
+  /* footer */
+  #footer {
+    background-color: black;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    border-top: 3px solid yellow;
+  }
+  #footer a {
+    color: yellow;
+  }
+
+  /* brands we work on */
+  .brands-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .brands-table td {
+    border: 2px solid #000080;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #000080;
+    color: yellow;
+  }
+
+  /* blinking text */
+  .blink {
+    animation: blinker 1s step-start infinite;
+    color: red;
+    font-weight: bold;
+  }
+  @keyframes blinker {
+    50% { opacity: 0; }
+  }
+
+  /* under construction gif replacement */
+  .underconstruction {
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    color: orange;
+    font-weight: bold;
+    background-color: #111;
+    margin: 10px 15px;
+    border: 3px dashed orange;
+  }
+
+  /* horizontal rule style */
+  hr {
+    border: 3px solid red;
+    margin: 0;
+  }
+
+  /* stats row */
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .stat-box {
+    background-color: #000080;
+    color: yellow;
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+  }
+  .stat-box div {
+    font-size: 26px;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<!-- MARQUEE TICKER -->
+<marquee scrollamount="5">⭐ 5 STAR RATED on Google ⭐ &nbsp;&nbsp;&nbsp; WE FIX BMW, MERCEDES, AUDI, VW, AND PORSCHE &nbsp;&nbsp;&nbsp; CALL NOW: (346) 372-2060 &nbsp;&nbsp;&nbsp; LOCATED IN TOMBALL TX &nbsp;&nbsp;&nbsp; HONEST PRICES!! &nbsp;&nbsp;&nbsp;</marquee>
+
+<!-- TOP NAV -->
+<div id="topnav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+  <a href="#formarea">Book Now!!</a>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+  <h1>🔧 MATT'S GERMAN CAR FIXING 🔧</h1>
+  <p>Tomball, Texas &nbsp;|&nbsp; BMW &bull; Mercedes &bull; Audi &bull; VW &bull; Porsche</p>
+  <p style="color:lime; font-size:13px;">Est. sometime around 2020 i think</p>
+</div>
+
+<hr>
+
+<!-- HERO -->
+<div id="hero">
+  <h2>German Car Repair Done Right</h2>
+  <p>
+    Bachmobile German Auto Service is a specialty shop in Tomball, Texas focused exclusively on German vehicles. Owner and technician Matthew Pockrus has years of hands-on experience with BMW, Mercedes-Benz, Audi, Volkswagen, and Porsche.
+  </p>
+  <p>
+    When you bring your car here, Matthew is the one working on it — no hand-offs, no junior techs. Just honest, knowledgeable service at a fair price.
+  </p>
+  <a class="bigbutton" href="tel:3463722060">📞 CALL NOW</a>
+  &nbsp;
+  <a class="bigbutton" href="#formarea">📋 REQUEST SERVICE</a>
+  <br><br>
+  <span class="blink">⚠️ CALL TODAY TO SCHEDULE YOUR APPOINTMENT ⚠️</span>
+</div>
+
+<!-- STATS -->
+<div class="section">
+  <h2>By The Numbers</h2>
+  <div class="stats-row">
+    <div class="stat-box"><div>5 ⭐</div>Google Rating</div>
+    <div class="stat-box"><div>16+</div>Reviews</div>
+    <div class="stat-box"><div>5+</div>Years Open</div>
+    <div class="stat-box"><div>5</div>Car Brands</div>
+  </div>
+</div>
+
+<!-- UNDER CONSTRUCTION NOTE -->
+<div class="underconstruction">
+  🚧 &nbsp; WEBSITE STILL BEING WORKED ON &nbsp; 🚧
+</div>
+
+<!-- ABOUT -->
+<a name="about"></a>
+<div class="section" id="about">
+  <h2>About Us</h2>
+  <img src="https://placehold.co/160x160/000080/yellow?text=MATT\nTHE\nMECHANIC&font=oswald" alt="Photo of Matt (coming soon)">
+  <p>
+    Matthew Pockrus is the owner and sole technician at Bachmobile German Auto Service. He has spent years developing deep expertise in German vehicles and the unique engineering, electronics, and performance systems that set them apart.
+  </p>
+  <p>
+    When you bring your car to Bachmobile, Matthew is the person working on it — every time. There are no other technicians on staff, which means your vehicle always gets the owner's full attention and skill.
+  </p>
+  <p>
+    The shop is located on FM 2920 in Tomball and serves drivers throughout the greater Houston area. Bachmobile was founded on a straightforward idea: German car owners deserve a specialist, not a generic shop that works on everything.
+  </p>
+  <p>
+    Customers consistently describe Matthew as knowledgeable, honest, and fairly priced — qualities that are harder to find than they should be in auto repair.
+  </p>
+  <br style="clear:both;">
+</div>
+
+<!-- BRANDS -->
+<div class="section">
+  <h2>Cars We Work On</h2>
+  <p>Bachmobile works exclusively on German-engineered vehicles. If you drive something else, we're happy to point you in the right direction.</p>
+  <table class="brands-table">
+    <tr>
+      <td>BMW</td>
+      <td>Mercedes-Benz</td>
+      <td>Audi</td>
+      <td>Volkswagen</td>
+      <td>Porsche</td>
+    </tr>
+  </table>
+</div>
+
+<!-- SERVICES -->
+<a name="services"></a>
+<div class="section" id="services">
+  <h2>What We Do (Services)</h2>
+  <p>Below is a full list of services offered at Bachmobile. If you have a question about something not listed, give us a call.</p>
+
+  <div class="service-item"><span>🔍</span> Diagnostics — Manufacturer-specific tools to accurately identify issues across all German vehicle systems</div>
+  <div class="service-item"><span>🔧</span> Routine Maintenance — Oil changes, fluid services, filter replacements, and multi-point inspections</div>
+  <div class="service-item"><span>⚙️</span> Engine Repair — From minor tune-ups to major overhauls on complex German engines</div>
+  <div class="service-item"><span>🔄</span> Transmission Service — Specialized service for the automatic and dual-clutch transmissions in German vehicles</div>
+  <div class="service-item"><span>🛑</span> Brake System — Inspections, pad and rotor replacement, fluid flushes, and brake system repair</div>
+  <div class="service-item"><span>🚗</span> Suspension &amp; Steering — Adaptive and air suspension diagnostics, steering repair, and wheel alignment</div>
+  <div class="service-item"><span>⚡</span> Electrical Systems — Troubleshooting of the complex electronics and control modules in modern German vehicles</div>
+  <div class="service-item"><span>❄️</span> HVAC Service — Heating, ventilation, and A/C maintenance and repair</div>
+  <div class="service-item"><span>📋</span> Pre-Purchase Inspections — A thorough inspection and detailed report before you buy a used German vehicle</div>
+</div>
+
+<!-- WHY CHOOSE US -->
+<a name="whyus"></a>
+<div class="section" id="whyus">
+  <h2>Why Come Here Instead of Somewhere Else</h2>
+  <ul>
+    <li><b>German-Only Focus</b> — Bachmobile specializes exclusively in German vehicles, so every repair is handled by someone who genuinely understands the engineering</li>
+    <li><b>Owner Does the Work</b> — Matthew isn't just the owner, he's the technician. Your car is never handed off to someone less experienced</li>
+    <li><b>Honest Pricing</b> — You won't be charged for repairs you don't need. Customers consistently describe Matthew as straightforward and fair</li>
+    <li><b>Specialist Rates</b> — European car care doesn't have to mean dealership prices. Bachmobile delivers expert service at rates that actually make sense</li>
+    <li><b>Strong Reputation</b> — 5.0 stars across 16+ Google reviews from real customers in the Houston area</li>
+  </ul>
+</div>
+
+<!-- REVIEWS -->
+<a name="reviews"></a>
+<div class="section" id="reviews">
+  <h2>Customer Reviews ⭐⭐⭐⭐⭐</h2>
+  <p><b>Bachmobile holds a 5.0-star rating on Google. Here is a selection of recent reviews:</b></p>
+
+  <div class="review-box">
+    <div class="stars">★★★★★</div>
+    <p>"Matthew has kept my 7 series running well for over 5 years. Very reasonably priced and very honest. I wouldnt go anywhere else!"</p>
+    <div class="name">— Miriam P. (BMW 7 Series)</div>
+  </div>
+
+  <div class="review-box">
+    <div class="stars">★★★★★</div>
+    <p>"Finally found someone who actually knows Audis. Figured out my problem in an hour when the dealer had it two days and didnt know. Great price."</p>
+    <div class="name">— James R. (Audi A6)</div>
+  </div>
+
+  <div class="review-box">
+    <div class="stars">★★★★★</div>
+    <p>"Brought my Mercedes in for a suspension problem. Matt told me everything before doing anything. No surprise charges. Really good shop."</p>
+    <div class="name">— Sandra L. (Mercedes C-Class)</div>
+  </div>
+
+  <div class="review-box">
+    <div class="stars">★★★★★</div>
+    <p>"My VW went to 3 other shops and nobody could fix it. Matt fixed it on the first try. He is my mechanic for life now."</p>
+    <div class="name">— Chris M. (VW GTI)</div>
+  </div>
+
+  <div class="review-box">
+    <div class="stars">★★★★★</div>
+    <p>"I drive all the way from Cypress just to bring my Porsche here. I dont trust anyone else with it. And the price is way better than the dealer."</p>
+    <div class="name">— Tony B. (Porsche Cayenne)</div>
+  </div>
+
+  <p style="text-align:center; margin-top:15px;">
+    <a href="https://www.google.com/maps/search/Bachmobile+German+Auto+Service+Tomball" target="_blank" style="color:#000080; font-size:16px; font-weight:bold;">👉 See All Reviews on Google 👈</a>
+  </p>
+</div>
+
+<!-- CONTACT -->
+<a name="contact"></a>
+<div id="contact">
+  <h2>📞 Call or Come See Us</h2>
+  <p><b>Phone:</b> <a href="tel:3463722060">(346) 372-2060</a></p>
+  <p><b>Address:</b> 17413 FM 2920, Suite P2, Tomball TX 77377</p>
+  <p><b>Hours:</b></p>
+  <p>Monday thru Friday: 8am - 6pm</p>
+  <p>Saturday: 9am - 4pm</p>
+  <p>Sunday: Closed (sorry)</p>
+  <br>
+  <p style="color:lime; font-size:14px;">We serve Tomball, Cypress, Spring, The Woodlands, Magnolia, and other places near Houston</p>
+</div>
+
+<!-- FORM -->
+<a name="formarea"></a>
+<div id="formarea">
+  <h2>📋 Request a Visit</h2>
+  <p>Fill out the form below and Matthew will follow up with you directly. The more detail you provide about your vehicle and the issue, the better he can prepare.</p>
+
+  <label>Your Name:</label>
+  <input type="text" placeholder="Full name">
+
+  <label>Phone Number:</label>
+  <input type="tel" placeholder="Best number to reach you">
+
+  <label>Email Address:</label>
+  <input type="email" placeholder="email@example.com">
+
+  <label>Vehicle Make:</label>
+  <select>
+    <option>-- Select --</option>
+    <option>BMW</option>
+    <option>Mercedes-Benz</option>
+    <option>Audi</option>
+    <option>Volkswagen</option>
+    <option>Porsche</option>
+  </select>
+
+  <label>Year:</label>
+  <input type="text" placeholder="e.g. 2018">
+
+  <label>Model:</label>
+  <input type="text" placeholder="e.g. 3 Series, C300, A4">
+
+  <label>Describe the Issue or Service Needed:</label>
+  <textarea rows="5" placeholder="Please describe what your vehicle is doing, any warning lights, or the service you are looking for."></textarea>
+
+  <br>
+  <input type="submit" value="SUBMIT REQUEST ➤" onclick="alert('Your request has been submitted. Matthew will be in touch within one business day.')">
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+  <p><b style="color:yellow; font-size:16px;">MATT'S GERMAN CAR FIXING</b></p>
+  <p>17413 FM 2920 Suite P2 &bull; Tomball TX 77377</p>
+  <p><a href="tel:3463722060">(346) 372-2060</a></p>
+  <p style="margin-top:10px; font-size:11px; color:#666;">
+    &copy; 2026 Matt's German Car Fixing &nbsp;|&nbsp; Website by Matt's cousin Kevin
+  </p>
+</div>
+
+</body>
+</html>
